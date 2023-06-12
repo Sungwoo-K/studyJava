@@ -39,6 +39,10 @@ public class ArrayEx {
             System.out.println();
         }
 
+
+
+
+
         int[][] numbers1 = new int[2][2];
         int[][] numbers2 = new int[2][2];
         int[][] result = new int [2][2];
@@ -67,5 +71,29 @@ public class ArrayEx {
             System.out.println();
         }
 
+
+        ///////////////////////////////////////////
+
+        int[] number = {1, 2, 3, 4, 5};
+        int sum = 0;
+
+        for(int nums : number) {
+            sum += nums;
+        }
+
+        System.out.println("배열의 합: " + sum);
+
+
+
+        int[] number1 = {7, 14, 3, 8, 21, 5};
+        int max = number1[0];
+
+        for(int nums: number1){
+            if (max < nums) {
+                max = nums;
+            }
+        }
+
+        System.out.println("최댓값: " + max);
     }
 }
