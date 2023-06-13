@@ -1,5 +1,8 @@
 package ch04;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class ArrayEx {
     public static void main(String[] args) {
         int[] numbers = new int[5];
@@ -12,6 +15,16 @@ public class ArrayEx {
         str[2] = "C++";
         for(String string: str){
             System.out.println(string);
+        }
+
+        Scanner scanner = new Scanner(System.in);
+
+        double[] dou = new double[4];
+
+        System.out.println("숫자를 입력해주세요.");
+        for (int i = 0; i < dou.length; i++) {
+            dou[i] = scanner.nextInt();
+            System.out.println(dou[i]);
         }
 
         int[] num = new int[7];
@@ -27,6 +40,57 @@ public class ArrayEx {
             System.out.println(number);
         }
 
+
+        int[] numb = new int[4];
+        int result1 = 0;
+        System.out.println("숫자를 입력해주세요.");
+        for(int sum: numb){
+            sum = scanner.nextInt();
+            result1 += sum;
+        }
+        System.out.println(result1);
+
+        int[] numb1 = new int[5];
+
+        System.out.println("숫자를 입력해주세요.");
+        for(int i = 0; i < numb1.length; i++){
+            numb1[i] = scanner.nextInt();
+        }
+        int high = numb1[0];
+        int low = numb1[0];
+        for (int i = 0; i < numb1.length; i++) {
+            if (numb1[i] > high) {
+                high = numb1[i];
+            }
+        }
+        for (int i = 0; i < numb1.length; i++) {
+            if (numb1[i] < low) {
+                low = numb1[i];
+            }
+        }
+        System.out.println("가장높은 수 : " + high);
+        System.out.println("가장낮은 수 : " + low);
+
+        String[] string = new String[5];
+        System.out.println("이름을 입력해주세요.");
+        for (int i = 0; i < string.length; i++) {
+            string[i] = scanner.next();
+        }
+        Arrays.sort(string);
+        for(String name: string){
+            System.out.println(name);
+        }
+
+        int[] numb2 = new int[6];
+        int result2 = 0;
+        System.out.println("숫자를 입력해주세요.");
+        for (int i = 0; i < numb2.length; i++) {
+            numb2[i] = scanner.nextInt();
+            if (numb2[i] % 2 == 1 ){
+                result2 += 1;
+            }
+        }
+        System.out.println("홀수는 " + result2 + "개 입니다.");
         //////////////////////////////////////////
 
         char[][] numArray = new char[4][4];
@@ -39,7 +103,21 @@ public class ArrayEx {
             System.out.println();
         }
 
+        char[][] alpa = new char[4][4];
+        char ch = 'A';
+        for (int i = 0; i < alpa.length; i++) {
+            for (int j = 0; j < alpa[i].length; j++) {
+                alpa[i][j] = ch++;
+            }
+        }
 
+        for (int i = 0; i < alpa.length; i++) {
+            for (int j = 0; j < alpa[i].length; j++) {
+                if(i == j) {
+                    System.out.println(alpa[i][j]);
+                }
+            }
+        }
 
 
 

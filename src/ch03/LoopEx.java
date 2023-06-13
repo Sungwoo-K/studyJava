@@ -111,6 +111,7 @@ public class LoopEx {
                 System.out.print("*");
             }
             System.out.println();
+
         }
     }
 }
