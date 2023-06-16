@@ -65,8 +65,6 @@ public class AccountManagement {
     }
 
     private Account findAccount(String accountNumber) {
-        // **코드 작성
-        // 계좌번호로 계좌객체를 찾아서 리턴하는 메서드 작성
         Account findAccount = null;
         for (Account account : this.accountList) {
             if(account == null) {
