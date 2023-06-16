@@ -20,8 +20,8 @@ public class CourseService {
     }
 
     //과목 생성 기능
-    public void createCourse(String name, int maxCourse) {
-        Course madeCourse = new Course(name, maxCourse);
+    public void createCourse(String name, int maxStudent) {
+        Course madeCourse = new Course(name, maxStudent);
         if(numCourse != this.maxCourse) {
             courses[numCourse] = madeCourse;
             System.out.println(courses[numCourse].getName());
