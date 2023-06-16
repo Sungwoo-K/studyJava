@@ -81,7 +81,6 @@ public class CourseService {
                     String name = scanner.nextLine();
                     System.out.print("최대 학생 수를 입력해주세요: ");
                     int maxStudent = scanner.nextInt();
-                    scanner.nextLine();
                     createCourse(name, maxStudent);
                     break;
                 case 2:

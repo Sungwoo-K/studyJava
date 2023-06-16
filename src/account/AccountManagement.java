@@ -102,7 +102,6 @@ public class AccountManagement {
                     String accountNumber = scanner.nextLine();
                     System.out.print("잔액: ");
                     double balance = scanner.nextDouble();
-                    scanner.nextLine(); // 개행 문자 제거
                     addAccount(accountNumber, balance);
                     break;
                 case 2:
@@ -113,7 +112,6 @@ public class AccountManagement {
                     accountNumber = scanner.nextLine();
                     System.out.print("입금액: ");
                     double depositAmount = scanner.nextDouble();
-                    scanner.nextLine(); // 개행 문자 제거
                     deposit(accountNumber, depositAmount);
                     break;
                 case 4:
@@ -121,7 +119,6 @@ public class AccountManagement {
                     accountNumber = scanner.nextLine();
                     System.out.print("출금액: ");
                     double withdrawAmount = scanner.nextDouble();
-                    scanner.nextLine(); // 개행 문자 제거
                     withdraw(accountNumber, withdrawAmount);
                     break;
                 default:
