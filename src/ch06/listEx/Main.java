@@ -17,17 +17,13 @@ public class Main {
         list.remove("banana");
         list.add("strawberry");
         list.add(2, "orange");
-        for (String name : list) {
-            System.out.println(name);
-        }
+        System.out.println(list);
         System.out.println("리스트가 비어있나요? : " + list.isEmpty());
         System.out.println("-------------------");
 
         //9번 순번정렬 (검색함)
         Collections.sort(list);
-        for (String name : list) {
-            System.out.println(name);
-        }
+        System.out.println();
         System.out.println("-------------------");
 
         //10번 긴 문자열 찾기
@@ -53,15 +49,11 @@ public class Main {
         for (int i = 0; i < list.size(); i++) {
             list.set(i, list.get(i).toUpperCase());
         }
-        for (String name : list) {
-            System.out.println(name);
-        }
+        System.out.println(list);
         System.out.println("-------------------");
         //13번 요소들 거꾸로 배치
         Collections.reverse(list);
-        for (String name : list) {
-            System.out.println(name);
-        }
+        System.out.println(list);
         System.out.println("-------------------");
         //14번 list 에 있는 체리요소 확인
         int isCherry = list.indexOf("cherry");
@@ -74,11 +66,6 @@ public class Main {
 
         //15번 리스트의 마지막 요소 확인
         list.remove(list.size() - 1);
-        for (String name : list) {
-            System.out.println(name);
-        }
-
-
-
+        System.out.println(list);
     }
 }
