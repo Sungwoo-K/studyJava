@@ -1,4 +1,4 @@
-package ch06;
+package ch06.inheritance;
 
 public class Child extends Parent{
     int number = 2;

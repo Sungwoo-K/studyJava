@@ -1,4 +1,4 @@
-package ch06;
+package ch06.inheritance;
 
 public class InheritanceClass {
     public static void main(String[] args) {
