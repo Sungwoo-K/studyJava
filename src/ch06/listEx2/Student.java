@@ -4,7 +4,6 @@ public class Student {
     private String name;
     private int age;
     private int grade;
-    private Student student;
 
     public Student(String name, int age, int grade) {
         this.name = name;
