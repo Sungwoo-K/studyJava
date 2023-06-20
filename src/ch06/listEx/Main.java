@@ -56,8 +56,7 @@ public class Main {
         System.out.println(list);
         System.out.println("-------------------");
         //14번 list 에 있는 체리요소 확인
-        int isCherry = list.indexOf("cherry");
-        if(isCherry < 0) {
+        if(!list.contains("CHERRY")) {
             System.out.println("체리가 없습니다.");
         } else {
             System.out.println("체리가 있습니다.");

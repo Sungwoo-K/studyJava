@@ -1,9 +1,6 @@
 package ch06.listEx2;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,7 +36,17 @@ public class Main {
         }
         System.out.println("-----------------");
         //문제 5번
+        Collections.sort(list, Comparator.comparing(Student::getAge));
+        for (Student student : list) {
+            student.displayStudent();
+        }
+        System.out.println("-----------------");
         //문제 6번
+        Collections.sort(list, Comparator.comparing(Student::getGrade));
+        for (Student student : list) {
+            student.displayStudent();
+        }
+        System.out.println("-----------------");
         for (Student student : list) {
             if(student.getName().equals("Alice")) {
                 student.setAge(5);
