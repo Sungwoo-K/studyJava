@@ -1,9 +1,11 @@
-package ch06.account2;
-
-import java.util.*;
+package ch06.accountMap;
 
 // HashMap
 // 활용
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 public class AccountManagement {
     private Map<String, Account> accounts;  // 계좌 목록 배열
@@ -20,7 +22,7 @@ public class AccountManagement {
         // 계좌번호와 초기 입금액을 입력 받고 계좌객체를 생성한 후
         // 배열의 앞에서부터 가장 처음 빈 공간에 추가한다.
         // 단, 배열에 추가한 후 numAccounts를 증가시킨다.
-        Account account = new Account(balance);
+        Account account = new Account(accountNumber,balance);
         accounts.put(accountNumber, account);
     }
 
@@ -30,7 +32,7 @@ public class AccountManagement {
         // 예시 출력 형태
         // 계좌번호: [계좌번호2], 잔액: [잔액2]
         for (String accountNumber : this.accounts.keySet()) {
-            System.out.println("계좌번호: [" + accountNumber + "], 잔약: [" + accounts.get(accountNumber).getBalance() + "]");
+            System.out.println("계좌번호: [" + accounts.get(accountNumber).getAccountNumber() + "], 잔약: [" + accounts.get(accountNumber).getBalance() + "]");
         }
     }
 

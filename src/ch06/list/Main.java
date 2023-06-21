@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // List<자료형> 변수명 = new ArrayList<자료형>();
+        // List<자료형> 변수명 = new ArrayList<자료형 <- 생략가능>();
         // 자료형에 따라서 다르게 작동하기 위해서 추가적인 매개변수를 <자료형>을 넣는다.
         // 자료형을 매개변수로 받는 것을 제네릭(generic)
         // 매개변수의 자료형은 원시 자료형(primitive type)은 안 됨

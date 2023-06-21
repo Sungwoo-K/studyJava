@@ -1,4 +1,4 @@
-package ch06.account;
+package ch06.accountList;
 
 import java.util.ArrayList;
 import java.util.List;

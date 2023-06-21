@@ -1,4 +1,4 @@
-package ch06.account;
+package ch06.accountList;
 
 public class Main {
     public static void main(String[] args) {

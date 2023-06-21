@@ -14,14 +14,17 @@ public class Main {
         students.put("23-005", new Student("정재현", 25));
 
         //3번
-        students.get("23-002");
+        Student callStudent = students.get("23-002");
+
         //4번
         students.remove("23-002");
+
         //5번
         for (String key : students.keySet()){
             System.out.println("이름 : " + students.get(key).getName() + ", 나이 : " + students.get(key).getAge());
         };
         System.out.println("-----------------------------");
+
         //6번
         int ageAverage = 0;
         int sum = 0;
@@ -30,8 +33,8 @@ public class Main {
         };
         ageAverage = sum / students.size();
         System.out.println("나이의 평균값 : " + ageAverage);
-        //7번
 
+        //7번
         int mostBiggerAge = 0;
         Student oldStudent = null;
         for (String key : students.keySet()) {
@@ -46,6 +49,7 @@ public class Main {
         }
         System.out.println("가장 나이가 많은 학생 : " + oldStudent.getName());
         System.out.println("-----------------------------");
+
         //8번
         List<Student> stu = new ArrayList<>(students.values());
         stu.sort(Comparator.comparing(Student::getName));

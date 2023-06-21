@@ -16,7 +16,7 @@ public class Main {
         Map<String, Student> students = new HashMap<>();
 
         // 객체추가 create
-        // 키(key, 유일값): 학번
+        // 키(key <- 유일값): 학번
         // 값(value): 학생정보
         // 맵변수.put(엔트리(K, V))
         students.put("e-01-00001", new Student("강애진", 5, 5));

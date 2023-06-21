@@ -1,4 +1,4 @@
-package ch06.account2;
+package ch06.accountMap;
 
 public class Main {
     public static void main(String[] args) {

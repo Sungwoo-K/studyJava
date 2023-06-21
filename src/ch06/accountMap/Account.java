@@ -1,15 +1,20 @@
-package ch06.account2;
+package ch06.accountMap;
 
 
 
 // 계좌 클래스
 public class Account {
+    private String accountNumber;
     private double balance;         // 잔액
 
-    public Account(double balance) {
+    public Account(String accountNumber,double balance) {
+        this.accountNumber = accountNumber;
         this.balance = balance;
     }
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
 
     public double getBalance() {
         return balance;
