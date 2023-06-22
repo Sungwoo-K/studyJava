@@ -10,10 +10,6 @@ public class CourseManager {
         this.courses = new ArrayList<>();
     }
 
-    public List<Course> getCourses() {
-        return courses;
-    }
-
     //다양성을 위한 LectureCourse와 OnlineCourse를 둘다 받기위해서
     //매개변수를 상위 클래스인 Course 타입으로 받는다.
     public void addCourse(Course course) {
