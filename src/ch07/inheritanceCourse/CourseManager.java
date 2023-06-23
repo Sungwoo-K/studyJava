@@ -46,6 +46,16 @@ public class CourseManager {
         return lectureCourses;
     }
 
+    public List<Course> getCourseByInstructor(String instructorName) {
+        List<Course> courseByinstructor = new ArrayList<>();
+        for (Course course: this.courses) {
+            if(course.getInstructor().equals(instructorName)){
+                courseByinstructor.add(course);
+            }
+        }
+        return courseByinstructor;
+    }
+
     public void displayLectureCourse() {
         List<Course> lectureCourses = getLectureCourses();
 
@@ -71,16 +81,6 @@ public class CourseManager {
     }
 
 
-
-    public List<Course> getCourseByInstructor(String instructorName) {
-        List<Course> courseByinstructor = new ArrayList<>();
-        for (Course course: this.courses) {
-            if(course.getInstructor().equals(instructorName)){
-                courseByinstructor.add(course);
-            }
-        }
-        return courseByinstructor;
-    }
 
     public void displayCourseByInstructor(String instructorName) {
         List<Course> courseByinstructor = getCourseByInstructor(instructorName);
